@@ -2,7 +2,7 @@
 
 Akadálymentes beállítóprogram az AULA F75 billentyűzethez, a gyári program helyett. Vak felhasználó számára készült, képernyőolvasóval (NVDA) jól használható: a grafikus felülete natív Windows-vezérlőkből áll, a parancssoros változat minden kimenete egyszerű szöveg.
 
-Tudja: gombkiosztás négy rétegen (Default, FN1, FN2, Tap), makrók, alvási idő, pergésmentesítés, Tap (kettős funkció), világítás, mentés és betöltés fájlba. A magyar ISO kiosztást helyesen kezeli, a gyári programmal ellentétben.
+Funkciók: gombkiosztás négy rétegen (Default, FN1, FN2, Tap), makrók, alvási idő, pergésmentesítés, Tap (kettős funkció), világítás, mentés és betöltés fájlba. A magyar ISO kiosztást helyesen kezeli, a gyári programmal ellentétben.
 
 ## English summary
 
@@ -27,6 +27,18 @@ Telepítés után a program a Start menüből indul („AULA F75 beállítások�
 - A gyári program ne fusson egyszerre ezzel a programmal.
 - A gyári program minden mentéskor ANSI kiosztást ír a billentyűzetre, ezzel elrontja a magyar kiosztást: az í, az ű, az AltGr és az Fn rossz helyre kerül. Ha mégis használtad, utána futtasd le: `f75 apply`
 - Vészmegoldás: az Fn és az Esc 3 másodpercig nyomva tartva visszaállítja a billentyűzet gyári állapotát.
+
+## A grafikus felület
+
+Az ablaknak három füle van, a fülek között Ctrl+Tab-bal lehet váltani. Minden módosítás után az ablak alján rövid visszajelzés jelenik meg, amelyet az NVDA magától felolvas.
+
+- **Gombkiosztás:** a Réteg mezőben (Alt+R) választható ki a réteg, alatta a Gombok listában (Alt+G) soronként egy gomb látható, mellette a funkciója, és hogy gyári vagy átírt.
+  - Enter: a gomb átírása. A megnyíló ablakban a keresőmezőbe gépelve szűkül a funkciók listája; kombináció (például ctrl+shift+esc) is megadható, makrónál az ismétlés is beállítható.
+  - Delete: a gomb visszaállítása gyárira.
+  - A Minden gyárira gomb az egész kiosztást visszaállítja, előtte rákérdez.
+- **Makrók:** a makrók listája, Új szövegmakró, Új lépésmakró, Szerkesztés, Törlés és Lépések megjelenítése gombokkal. A makrót a Gombkiosztás fülön lehet gombra tenni.
+- **Beállítások:** alvási idő, pergésmentesítés, Tap, és a világítás (be/ki, effekt, fényerő, sebesség, szín). Az Alkalmazás gomb küldi el őket, a Kiolvasás a billentyűzetből gomb betölti az aktuális állapotot.
+- **Fájl menü:** Mentés fájlba (Ctrl+S), Betöltés fájlból (Ctrl+O), Gombkiosztás újraküldése (Ctrl+R).
 
 ## Parancssoros használat
 
