@@ -1,17 +1,16 @@
 # AULA F75 konfigurátor
 
+[English version](README.en.md)
+
 Akadálymentes beállítóprogram az AULA F75 billentyűzethez, a gyári program helyett. Vak felhasználó számára készült, képernyőolvasóval (NVDA) jól használható: a grafikus felülete natív Windows-vezérlőkből áll, a parancssoros változat minden kimenete egyszerű szöveg.
 
 Funkciók: gombkiosztás négy rétegen (Default, FN1, FN2, Tap), makrók, alvási idő, pergésmentesítés, Tap (kettős funkció), világítás, mentés és betöltés fájlba. A magyar ISO kiosztást helyesen kezeli, a gyári programmal ellentétben.
-
-## English summary
-
-An accessible replacement for the AULA F75 keyboard's vendor configuration software, made by and for a blind user. It works well with screen readers (NVDA): the GUI uses native Windows controls (wxPython), and there is a plain-text command-line tool. Features: key remapping on all four layers, macros, sleep time, debounce, tap/hold dual function, lighting, and saving/loading the configuration as JSON. The protocol was reverse engineered from USB captures; see `research/protokoll.md` (Hungarian). The user interface is Hungarian, and key names follow the Hungarian ISO layout; other layouts and firmware versions are untested.
 
 ## Figyelmeztetés
 
 - Ez nem az AULA hivatalos programja, és a gyártó nem támogatja. Mindenki a saját felelősségére használja.
 - Csak a magyar ISO kiosztású AULA F75-tel (USB 258a:010c), V11.0.4-es firmware-rel próbáltuk ki. Más változatokkal és firmware-ekkel nem biztos, hogy működik.
+- Más változatokon, főleg az amerikai ANSI-n, a program valószínűleg felcserélné a szóköz jobb oldalán lévő két gombot, mert oda a magyar kiosztást írja (AltGr és Fn). ANSI vagy más, nem magyar F75-tel egyelőre ne használd.
 - A program csak beállításokat küld a billentyűzetnek, firmware-t soha nem ír.
 - Vészmegoldás: az Fn és az Esc 3 másodpercig nyomva tartva visszaállítja a billentyűzet gyári állapotát.
 
